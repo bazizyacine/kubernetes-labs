@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   labels:
     app: hello
@@ -37,5 +37,5 @@ spec:
             path: /readiness
             port: 81
             scheme: HTTP
-          nitialDelaySeconds: 5
+          initialDelaySeconds: 5
           timeoutSeconds: 1
